@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Learnify</title>
+    <link rel="stylesheet" href="/learnify/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <style>
+      /* Basic Reset (optional, you might have this in your style.css) */
+      body,
+      h1,
+      label,
+      input,
+      textarea,
+      button {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column; /* Arrange navigation and content vertically */
+        justify-content: flex-start; /* Align items at the top */
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      nav {
+        width: 100%;
+        background-color: #333;
+        padding: 15px 20px;
+        text-align: right;
+      }
+
+      nav button {
+        background: hsl(170, 85%, 35%);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      nav button:hover {
+        background: hsl(170, 79%, 28%);
+      }
+
+      .contact-form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .contact {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .contact h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .contact-form {
+        width: 100%;
+        max-width: 600px;
+        padding: 40px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      form input,
+      form textarea {
+        width: calc(100% - 24px); /* Adjust for padding and border */
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      form input:focus,
+      form textarea:focus {
+        outline: none;
+        border-color: hsl(170, 75%, 41%);
+        box-shadow: 0 0 5px rgba(56, 182, 153, 0.5);
+      }
+
+      form textarea {
+        resize: vertical;
+        min-height: 150px;
+      }
+
+      form button {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        background: hsl(170, 75%, 41%);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      form button:hover {
+        background: hsl(170, 85%, 35%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button>
+        <a href="/index.html" style="color: white; text-decoration: none">
+          Go to Home →
+        </a>
+      </button>
+    </nav>
+    <div class="contact-form-container">
+      <div class="contact">
+        <h1>Let's Connect</h1>
+        <p
+          style="
+            color: #777;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif;
+          ">
+          We'd love to hear from you! Send us a message and we'll get back to
+          you as soon as possible.
+        </p>
+      </div>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required />
+
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject of your message" />
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message here..."
+            required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <script src="/learnify/script.js"></script>
+  </body>
+</html>
