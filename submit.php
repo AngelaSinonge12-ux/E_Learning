@@ -1,9 +1,10 @@
+-- Active: 1745934871033@@127.0.0.1@3306@learnify_db
 <?php
 $host = "localhost";
-$username = "root";
-$password = "";
-$databaseName = "e_learning";
-$tableName = "user_info";
+$username = "root"; 
+$password = "";    
+$databaseName = "learnify_db";
+$tableName = "data";
 
 $connection = mysqli_connect($host, $username, $password, $databaseName);
 
