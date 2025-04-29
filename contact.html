@@ -1,3 +1,4 @@
+-- Active: 1745877150301@@127.0.0.1@3306@e_learning
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -130,7 +131,7 @@
         border: none;
         border-radius: 6px;
         cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
 
       form button:hover {
@@ -146,6 +147,7 @@
         </a>
       </button>
     </nav>
+
     <div class="contact-form-container">
       <div class="contact">
         <h1>Let's Connect</h1>
@@ -161,13 +163,20 @@
         </p>
       </div>
       <div class="contact-form">
-        <form action="#" method="post">
-          <label for="name">Your Name</label>
+        <form action="/submit.php" method="POST">
+          <label for="first_name">First Name</label>
           <input
             type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your full name"
+            id="first_name"
+            name="first_name"
+            placeholder="Enter your first name"
+            required />
+          <label for="last_name">Last Name</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Enter your last name"
             required />
 
           <label for="email">Your Email</label>
@@ -196,6 +205,6 @@
         </form>
       </div>
     </div>
-    <script src="/learnify/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
